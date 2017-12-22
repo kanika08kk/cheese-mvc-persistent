@@ -22,6 +22,10 @@ public class Menu {
     @ManyToMany
     private List<Cheese> cheeses;
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Menu() { }
 
     public void addItem(Cheese item) { cheeses.add(item); }
