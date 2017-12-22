@@ -78,7 +78,7 @@ public class CheeseController {
             cheeseDao.delete(id);
         }
         return "redirect:";
-    } 
+    }
 
     @RequestMapping(value = "category", method = RequestMethod.GET)
     public String category(Model model, @RequestParam int id) {
